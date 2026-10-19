@@ -1,0 +1,331 @@
+{
+  "provenance": {
+    "purpose": "Closes the deferred item: ECE on the DECONTAMINATED TransPHLA EL subset. The manuscript reports the full-set figure and defers this one.",
+    "generated_by": "publication/MDPI_Information_Manuscript/scripts/producers/pod_ece_clean_subset.py",
+    "source_npz": "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz",
+    "definition": "ECE = sum_b (n_b/N) * |pred_mean_b - emp_freq_b|, 10 equal-width bins",
+    "control": {
+      "description": "Full-set ECE recomputed from the same npz and checked against the committed fig_S1_calibration_bins.csv before the clean-subset number was accepted.",
+      "targets": {
+        "DeepNeo-CL (EL)": 0.0906,
+        "NetMHCpan-4.1 (EL)": 0.2021
+      },
+      "passed": true
+    }
+  },
+  "decontamination": {
+    "n_full": 161652,
+    "n_contaminated": 43509,
+    "n_clean": 118143,
+    "pct_contaminated": 26.92,
+    "criterion": "exact (peptide, HLA) pair membership in the NetMHCpan-4.1 BA+EL training-pair union"
+  },
+  "full_set": {
+    "DeepNeo-CL (EL)": {
+      "n_rows": 161652,
+      "ece_10bin": 0.0906,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 44813,
+          "pred_mean": 0.0465,
+          "emp_freq": 0.019
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 19561,
+          "pred_mean": 0.1433,
+          "emp_freq": 0.0838
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 10521,
+          "pred_mean": 0.246,
+          "emp_freq": 0.2277
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 7365,
+          "pred_mean": 0.3477,
+          "emp_freq": 0.3984
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 6226,
+          "pred_mean": 0.4502,
+          "emp_freq": 0.5779
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 6419,
+          "pred_mean": 0.5513,
+          "emp_freq": 0.7529
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 8487,
+          "pred_mean": 0.6532,
+          "emp_freq": 0.8839
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 14235,
+          "pred_mean": 0.7554,
+          "emp_freq": 0.9547
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 27747,
+          "pred_mean": 0.855,
+          "emp_freq": 0.9881
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 16278,
+          "pred_mean": 0.9285,
+          "emp_freq": 0.9964
+        }
+      ]
+    },
+    "NetMHCpan-4.1 (EL)": {
+      "n_rows": 161652,
+      "ece_10bin": 0.2021,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 92893,
+          "pred_mean": 0.007,
+          "emp_freq": 0.157
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 5834,
+          "pred_mean": 0.1458,
+          "emp_freq": 0.8449
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 4466,
+          "pred_mean": 0.2487,
+          "emp_freq": 0.9008
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 3995,
+          "pred_mean": 0.3496,
+          "emp_freq": 0.9309
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 3975,
+          "pred_mean": 0.4504,
+          "emp_freq": 0.9537
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 4268,
+          "pred_mean": 0.5516,
+          "emp_freq": 0.9674
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 5165,
+          "pred_mean": 0.6522,
+          "emp_freq": 0.975
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 6775,
+          "pred_mean": 0.7525,
+          "emp_freq": 0.9823
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 10937,
+          "pred_mean": 0.8551,
+          "emp_freq": 0.9918
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 23344,
+          "pred_mean": 0.9569,
+          "emp_freq": 0.9969
+        }
+      ]
+    }
+  },
+  "decontaminated_subset": {
+    "DeepNeo-CL (EL)": {
+      "n_rows": 118143,
+      "ece_10bin": 0.0774,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 44437,
+          "pred_mean": 0.0463,
+          "emp_freq": 0.0112
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 18803,
+          "pred_mean": 0.1428,
+          "emp_freq": 0.0471
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 9446,
+          "pred_mean": 0.2453,
+          "emp_freq": 0.1402
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 6027,
+          "pred_mean": 0.3468,
+          "emp_freq": 0.2651
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 4575,
+          "pred_mean": 0.4495,
+          "emp_freq": 0.426
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 4215,
+          "pred_mean": 0.5508,
+          "emp_freq": 0.6244
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 5124,
+          "pred_mean": 0.6528,
+          "emp_freq": 0.8078
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 7752,
+          "pred_mean": 0.7541,
+          "emp_freq": 0.9171
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 12235,
+          "pred_mean": 0.8524,
+          "emp_freq": 0.9731
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 5529,
+          "pred_mean": 0.927,
+          "emp_freq": 0.9895
+        }
+      ]
+    },
+    "NetMHCpan-4.1 (EL)": {
+      "n_rows": 118143,
+      "ece_10bin": 0.1382,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 86282,
+          "pred_mean": 0.0054,
+          "emp_freq": 0.0927
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 3704,
+          "pred_mean": 0.145,
+          "emp_freq": 0.7559
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 2548,
+          "pred_mean": 0.2474,
+          "emp_freq": 0.8265
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 2117,
+          "pred_mean": 0.3488,
+          "emp_freq": 0.8701
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 2009,
+          "pred_mean": 0.45,
+          "emp_freq": 0.9084
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 2045,
+          "pred_mean": 0.5513,
+          "emp_freq": 0.932
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 2391,
+          "pred_mean": 0.6513,
+          "emp_freq": 0.946
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 2992,
+          "pred_mean": 0.7521,
+          "emp_freq": 0.9599
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 4641,
+          "pred_mean": 0.855,
+          "emp_freq": 0.9806
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 9414,
+          "pred_mean": 0.9558,
+          "emp_freq": 0.9925
+        }
+      ]
+    }
+  }
+}

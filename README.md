@@ -16,7 +16,7 @@ manuscript sources and all correspondence are not published here.
 
 | Path | Contents |
 |---|---|
-| `supplementary_data/` | 19 JSON ledgers + the 10-bin calibration table (`fig_S1_calibration_bins.csv`) |
+| `supplementary_data/` | 20 JSON ledgers + the 10-bin calibration table (`fig_S1_calibration_bins.csv`) |
 | `graphical_abstract.svg` | Graphical abstract |
 | `HIGHLIGHTS.md` | What the paper does, and does not, claim |
 

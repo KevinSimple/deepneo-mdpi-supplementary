@@ -11,7 +11,7 @@ Each bullet maps to a frozen number or ledger that is reproducible from the comm
 - A compact 35 M-param PLM (DeepNeo-CL) for peptide–MHC class I ranking.
 - Decontamination finds 26.9% exact-pair leakage; clean n = 118,143 reported.
 - Matches NetMHCpan-4.1 at the fused score on decontaminated TransPHLA.
-- Expected calibration error 0.091 vs 0.202 — half the baseline (SI Fig S1).
+- Expected calibration error 0.091 vs 0.202 on the full TransPHLA EL set, and 0.077 vs 0.138 after decontamination (SI Fig S2) — the advantage narrows but holds.
 - Every substantive claim traces to one of 17 public SI JSON ledgers.
 
 ---
@@ -23,7 +23,7 @@ Each bullet maps to a frozen number or ledger that is reproducible from the comm
 | 1 | 70 | "A compact 35 M-param PLM (DeepNeo-CL) for peptide–MHC class I ranking." |
 | 2 | 75 | "Decontamination finds 26.9% exact-pair leakage; clean n = 118,143 reported." |
 | 3 | 69 | "Matches NetMHCpan-4.1 at the fused score on decontaminated TransPHLA." |
-| 4 | 74 | "Expected calibration error 0.091 vs 0.202 — half the baseline (SI Fig S1)." |
+| 4 | 74 | "Expected calibration error 0.091 vs 0.202 on the full TransPHLA EL set, and 0.077 vs 0.138 after decontamination (SI Fig S2) — the advantage narrows but holds." |
 | 5 | 69 | "Every substantive claim traces to one of 17 public SI JSON ledgers." |
 
 All five under 85 characters. No frozen number violated; no tone-rule word.
