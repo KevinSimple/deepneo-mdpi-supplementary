@@ -1,0 +1,105 @@
+{
+  "provenance": {
+    "note": "TransPHLA re-evaluated on rows absent from the NetMHCpan-4.1 training corpus (BA+EL). The overlap is symmetric: DeepNeo-CL trains on the same corpus, so both predictors saw the contaminated rows. Deltas are the quantity of interest; absolute levels on the full set are inflated for both.",
+    "n_full": 161652,
+    "n_contaminated": 43509,
+    "pct_contaminated": 26.92,
+    "n_clean": 118143
+  },
+  "full": {
+    "deepneo_ba": {
+      "n": 161652,
+      "auroc": 0.9546,
+      "aupr": 0.9561
+    },
+    "deepneo_el": {
+      "n": 161652,
+      "auroc": 0.9697,
+      "aupr": 0.9714
+    },
+    "netmhcpan_ba": {
+      "n": 161652,
+      "auroc": 0.9638,
+      "aupr": 0.9642
+    },
+    "netmhcpan_el": {
+      "n": 161652,
+      "auroc": 0.9682,
+      "aupr": 0.9716
+    },
+    "mhcflurry": {
+      "n": 161652,
+      "auroc": 0.9674,
+      "aupr": 0.9669
+    },
+    "deepneo_fusion": {
+      "n": 161652,
+      "auroc": 0.9694,
+      "aupr": 0.9705
+    },
+    "netmhcpan_fused": {
+      "n": 161652,
+      "auroc": 0.9697,
+      "aupr": 0.9719
+    }
+  },
+  "clean": {
+    "deepneo_ba": {
+      "n": 118143,
+      "auroc": 0.9363,
+      "aupr": 0.8941
+    },
+    "deepneo_el": {
+      "n": 118143,
+      "auroc": 0.964,
+      "aupr": 0.9353
+    },
+    "netmhcpan_ba": {
+      "n": 118143,
+      "auroc": 0.95,
+      "aupr": 0.912
+    },
+    "netmhcpan_el": {
+      "n": 118143,
+      "auroc": 0.9581,
+      "aupr": 0.9351
+    },
+    "mhcflurry": {
+      "n": 118143,
+      "auroc": 0.965,
+      "aupr": 0.9307
+    },
+    "deepneo_fusion": {
+      "n": 118143,
+      "auroc": 0.9573,
+      "aupr": 0.9261
+    },
+    "netmhcpan_fused": {
+      "n": 118143,
+      "auroc": 0.9575,
+      "aupr": 0.931
+    }
+  },
+  "headline_deltas": {
+    "BA_fusion_vs_netmhcpan_ba": {
+      "auroc": {
+        "full": 0.0056,
+        "clean": 0.0073
+      },
+      "aupr": {
+        "full": 0.0063,
+        "clean": 0.0141
+      }
+    },
+    "EL_vs_netmhcpan_el": {
+      "auroc": {
+        "full": 0.0015,
+        "clean": 0.0059
+      },
+      "aupr": {
+        "full": -0.0002,
+        "clean": 0.0002
+      }
+    }
+  }
+}

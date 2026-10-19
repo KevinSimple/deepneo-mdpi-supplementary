@@ -1,0 +1,356 @@
+{
+  "figures": {
+    "fig_roc_pr_decontam": {
+      "supports": [
+        "Abstract three-view claim on decontaminated TransPHLA n=118,143",
+        "Table 2 v4.1 headline AUROCs / AUPRs at the row level"
+      ],
+      "source_npz": "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz",
+      "n_clean": 118143,
+      "positives": 37509,
+      "scores": {
+        "DeepNeo-CL fusion": {
+          "auroc": 0.9572527343956256,
+          "aupr": 0.9261234854741069
+        },
+        "NetMHCpan-4.1 BA": {
+          "auroc": 0.9499758004024087,
+          "aupr": 0.9119735125109307
+        },
+        "NetMHCpan-4.1 EL": {
+          "auroc": 0.9581141377323256,
+          "aupr": 0.9350881506304561
+        }
+      },
+      "included_in_submission": true
+    },
+    "fig_per_length_decontam": {
+      "supports": [
+        "Section 3.2: per-length Delta AUROC on decontaminated TransPHLA",
+        "Falsified secondary hypothesis: no monotone long-length tail"
+      ],
+      "source_npz": "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz",
+      "n_clean": 118143,
+      "rows": [
+        {
+          "length": 8,
+          "n": 5071,
+          "positives": 1319,
+          "auroc_deepneo": 0.9365060393365137,
+          "auroc_nmp41_ba": 0.9283294550210068,
+          "delta_auroc": 0.00817658431550683,
+          "delta_auroc_ci_lo": 0.003166417431436458,
+          "delta_auroc_ci_hi": 0.012332309777041625,
+          "aupr_deepneo": 0.8801055766333501,
+          "aupr_nmp41_ba": 0.8775417832285565,
+          "delta_aupr": 0.002563793404793624,
+          "delta_aupr_ci_lo": -0.005984613104922973,
+          "delta_aupr_ci_hi": 0.010853781399185263
+        },
+        {
+          "length": 9,
+          "n": 87897,
+          "positives": 30278,
+          "auroc_deepneo": 0.967129696922921,
+          "auroc_nmp41_ba": 0.9628593547849309,
+          "delta_auroc": 0.004270342137990046,
+          "delta_auroc_ci_lo": 0.0036479564200418675,
+          "delta_auroc_ci_hi": 0.004879249293532436,
+          "aupr_deepneo": 0.9423988360910892,
+          "aupr_nmp41_ba": 0.9326488314082911,
+          "delta_aupr": 0.009750004682798075,
+          "delta_aupr_ci_lo": 0.008275700236939002,
+          "delta_aupr_ci_hi": 0.011255641867931328
+        },
+        {
+          "length": 10,
+          "n": 17564,
+          "positives": 4085,
+          "auroc_deepneo": 0.9239994250088286,
+          "auroc_nmp41_ba": 0.9090768240691378,
+          "delta_auroc": 0.014922600939690778,
+          "delta_auroc_ci_lo": 0.011871480079177843,
+          "delta_auroc_ci_hi": 0.01838614613780778,
+          "aupr_deepneo": 0.8506146522339302,
+          "aupr_nmp41_ba": 0.8140952169264607,
+          "delta_aupr": 0.03651943530746948,
+          "delta_aupr_ci_lo": 0.030666142497983075,
+          "delta_aupr_ci_hi": 0.04244556612615371
+        },
+        {
+          "length": 11,
+          "n": 7611,
+          "positives": 1827,
+          "auroc_deepneo": 0.8761311236629594,
+          "auroc_nmp41_ba": 0.8563047581952289,
+          "delta_auroc": 0.019826365467730533,
+          "delta_auroc_ci_lo": 0.01411288619860955,
+          "delta_auroc_ci_hi": 0.025680393488679287,
+          "aupr_deepneo": 0.797689212613317,
+          "aupr_nmp41_ba": 0.7786557676727001,
+          "delta_aupr": 0.019033444940616984,
+          "delta_aupr_ci_lo": 0.011743393652342357,
+          "delta_aupr_ci_hi": 0.027043260178791797
+        }
+      ],
+      "bootstrap": {
+        "B": 500,
+        "seed": 20260726
+      },
+      "included_in_submission": true
+    },
+    "fig_per_length_delta_aupr": {
+      "supports": [
+        "Supplement: Delta AUPR companion to per-length Delta AUROC"
+      ],
+      "source_npz": "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz",
+      "n_clean": 118143,
+      "rows": [
+        {
+          "length": 8,
+          "n": 5071,
+          "positives": 1319,
+          "auroc_deepneo": 0.9365060393365137,
+          "auroc_nmp41_ba": 0.9283294550210068,
+          "delta_auroc": 0.00817658431550683,
+          "delta_auroc_ci_lo": 0.003166417431436458,
+          "delta_auroc_ci_hi": 0.012332309777041625,
+          "aupr_deepneo": 0.8801055766333501,
+          "aupr_nmp41_ba": 0.8775417832285565,
+          "delta_aupr": 0.002563793404793624,
+          "delta_aupr_ci_lo": -0.005984613104922973,
+          "delta_aupr_ci_hi": 0.010853781399185263
+        },
+        {
+          "length": 9,
+          "n": 87897,
+          "positives": 30278,
+          "auroc_deepneo": 0.967129696922921,
+          "auroc_nmp41_ba": 0.9628593547849309,
+          "delta_auroc": 0.004270342137990046,
+          "delta_auroc_ci_lo": 0.0036479564200418675,
+          "delta_auroc_ci_hi": 0.004879249293532436,
+          "aupr_deepneo": 0.9423988360910892,
+          "aupr_nmp41_ba": 0.9326488314082911,
+          "delta_aupr": 0.009750004682798075,
+          "delta_aupr_ci_lo": 0.008275700236939002,
+          "delta_aupr_ci_hi": 0.011255641867931328
+        },
+        {
+          "length": 10,
+          "n": 17564,
+          "positives": 4085,
+          "auroc_deepneo": 0.9239994250088286,
+          "auroc_nmp41_ba": 0.9090768240691378,
+          "delta_auroc": 0.014922600939690778,
+          "delta_auroc_ci_lo": 0.011871480079177843,
+          "delta_auroc_ci_hi": 0.01838614613780778,
+          "aupr_deepneo": 0.8506146522339302,
+          "aupr_nmp41_ba": 0.8140952169264607,
+          "delta_aupr": 0.03651943530746948,
+          "delta_aupr_ci_lo": 0.030666142497983075,
+          "delta_aupr_ci_hi": 0.04244556612615371
+        },
+        {
+          "length": 11,
+          "n": 7611,
+          "positives": 1827,
+          "auroc_deepneo": 0.8761311236629594,
+          "auroc_nmp41_ba": 0.8563047581952289,
+          "delta_auroc": 0.019826365467730533,
+          "delta_auroc_ci_lo": 0.01411288619860955,
+          "delta_auroc_ci_hi": 0.025680393488679287,
+          "aupr_deepneo": 0.797689212613317,
+          "aupr_nmp41_ba": 0.7786557676727001,
+          "delta_aupr": 0.019033444940616984,
+          "delta_aupr_ci_lo": 0.011743393652342357,
+          "delta_aupr_ci_hi": 0.027043260178791797
+        }
+      ],
+      "bootstrap": {
+        "B": 500,
+        "seed": 20260726
+      },
+      "included_in_submission": false,
+      "status_2026_10_19": "NOT INCLUDED in the manuscript or supplement. Retained for audit rather than deleted; do not cite as if it ships with the paper."
+    },
+    "fig_rare_allele": {
+      "supports": [
+        "Section 3.6: per-allele Delta AUROC on decontaminated TransPHLA",
+        "Score-availability figure Fig 8 replacement"
+      ],
+      "source_npz": "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz",
+      "n_clean": 118143,
+      "n_alleles_shown": 79,
+      "included_in_submission": false,
+      "status_2026_10_19": "NOT INCLUDED in the manuscript or supplement. Retained for audit rather than deleted; do not cite as if it ships with the paper."
+    },
+    "fig_holm_family": {
+      "supports": [
+        "Section 2.6 three-condition rule bar/error visualisation"
+      ],
+      "source_json": [
+        "publication/phase0/artifacts/paired_bootstrap_ci.json",
+        "publication/phase0/artifacts/table2_holm_adjusted.json"
+      ],
+      "included_in_submission": true
+    }
+  },
+  "generated_by": "publication/phase0/scripts/pod_regen_bmc_figures.py",
+  "round": "R24",
+  "figure_index": {
+    "generated": "2026-10-19",
+    "generated_by": "publication/MDPI_Information_Manuscript/scripts/update_figure_provenance.py",
+    "purpose": "Every figure the manuscript or supplement includes, mapped to the artefact(s) it is rendered from and the script that renders it. Required by the CLAUDE.md rule MDPI SUBMISSION SELF-CONTAINMENT.",
+    "figures_included": [
+      "fig07_ablation_grid",
+      "fig_S1_calibration",
+      "fig_contamination_ledger",
+      "fig_data_flow",
+      "fig_holm_family",
+      "fig_per_length_decontam",
+      "fig_roc_pr_decontam",
+      "fig_weekly_paired_scatter",
+      "fig_weekly_ranking_ba"
+    ],
+    "figures": {
+      "fig_roc_pr_decontam": {
+        "backing_artefacts": [
+          "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py",
+        "carries_numbers": true,
+        "note": "Per-curve AUROC/AUPR are tabulated in this ledger's `figures` block."
+      },
+      "fig_per_length_decontam": {
+        "backing_artefacts": [
+          "milestone_netmhcpan_beaten/thesis_assets/transphla_raw_predictions.npz"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py",
+        "carries_numbers": true,
+        "note": "Per-length rows and bootstrap CIs are in this ledger's `figures` block."
+      },
+      "fig_holm_family": {
+        "backing_artefacts": [
+          "latex/supplementary_data/table2_holm_adjusted.json"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py",
+        "carries_numbers": true,
+        "note": "Holm-adjusted family of the four v4.1 TransPHLA comparisons."
+      },
+      "fig_weekly_ranking_ba": {
+        "backing_artefacts": [
+          "latex/supplementary_data/weekly_ranking_v41_2020_2026_singlecol_v2.json"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py :: build_weekly_ranking_ba",
+        "carries_numbers": true,
+        "note": "Mean per-week rank board, 46 human-allele weeks, 14 ranking-eligible predictors."
+      },
+      "fig_weekly_paired_scatter": {
+        "backing_artefacts": [
+          "latex/supplementary_data/weekly_ranking_v41_2020_2026_singlecol_v2.json"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py :: build_weekly_paired_scatter",
+        "carries_numbers": true,
+        "note": "Same source artefact as fig_weekly_ranking_ba, plotted per-week paired."
+      },
+      "fig_contamination_ledger": {
+        "backing_artefacts": [
+          "latex/supplementary_data/autobench_decontam_vs_41.json",
+          "latex/supplementary_data/autobench_decontam_vs_42.json"
+        ],
+        "generator": "publication/phase0/scripts/make_publication_figures.py :: build_contamination_ledger",
+        "carries_numbers": true,
+        "note": "Two source artefacts, one per comparator corpus."
+      },
+      "fig_S1_calibration": {
+        "backing_artefacts": [
+          "latex/supplementary_data/fig_S1_calibration_bins.csv",
+          "latex/supplementary_data/ece_calibration_transphla_el.json"
+        ],
+        "generator": "publication/MDPI_Information_Manuscript/scripts/make_fig_S1_calibration_real.py",
+        "carries_numbers": true,
+        "note": "ECE 0.091 / 0.202 on the FULL TransPHLA EL set, n=161,652 -- NOT the n=118,143 decontaminated subset. The bin CSV and a computed ECE ledger were brought inside the submission folder on 2026-10-19."
+      },
+      "fig07_ablation_grid": {
+        "backing_artefacts": [
+          "latex/supplementary_data/ablation_ladder.json"
+        ],
+        "generator": "thesis_final/scripts/gen_fig07_ablation.py",
+        "carries_numbers": true,
+        "note": "The generator HARD-CODES the ladder values rather than reading the ledger; this script re-derives the comparison on every run (see `fig07_crosscheck`). The hatched pocket-reranker rung is a withdrawn transductive context row and is not part of the deployment ladder."
+      },
+      "fig_data_flow": {
+        "backing_artefacts": [],
+        "generator": "publication/phase0/scripts/make_data_flow_figure.py",
+        "carries_numbers": false,
+        "note": "SCHEMATIC. The generator states verbatim: '(schematic; no source JSON -- pipeline description only)'. It depicts the data pipeline and reports no measured quantity, so it has no backing artefact by design."
+      }
+    },
+    "unmapped_included_figures": []
+  },
+  "fig07_crosscheck": {
+    "checked": "2026-10-19",
+    "status": "MATCH",
+    "rungs_compared": 7,
+    "withdrawn_rows_excluded": 1,
+    "rows": [
+      {
+        "step": 1,
+        "figure_auroc": 0.952,
+        "ledger_auroc": 0.952,
+        "figure_aupr": 0.952,
+        "ledger_aupr": 0.952,
+        "match": true
+      },
+      {
+        "step": 2,
+        "figure_auroc": 0.957,
+        "ledger_auroc": 0.957,
+        "figure_aupr": 0.957,
+        "ledger_aupr": 0.957,
+        "match": true
+      },
+      {
+        "step": 3,
+        "figure_auroc": 0.962,
+        "ledger_auroc": 0.962,
+        "figure_aupr": 0.963,
+        "ledger_aupr": 0.963,
+        "match": true
+      },
+      {
+        "step": 4,
+        "figure_auroc": 0.964,
+        "ledger_auroc": 0.964,
+        "figure_aupr": 0.965,
+        "ledger_aupr": 0.965,
+        "match": true
+      },
+      {
+        "step": 5,
+        "figure_auroc": 0.969,
+        "ledger_auroc": 0.969,
+        "figure_aupr": 0.969,
+        "ledger_aupr": 0.969,
+        "match": true
+      },
+      {
+        "step": 6,
+        "figure_auroc": 0.971,
+        "ledger_auroc": 0.971,
+        "figure_aupr": 0.971,
+        "ledger_aupr": 0.971,
+        "match": true
+      },
+      {
+        "step": 7,
+        "figure_auroc": 0.97,
+        "ledger_auroc": 0.97,
+        "figure_aupr": 0.971,
+        "ledger_aupr": 0.971,
+        "match": true
+      }
+    ]
+  }
+}

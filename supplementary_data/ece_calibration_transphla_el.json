@@ -1,0 +1,178 @@
+{
+  "provenance": {
+    "manuscript_ref": "Figure S1 (Supplementary); cover letter contribution 2",
+    "generated": "2026-10-19",
+    "generated_by": "publication/MDPI_Information_Manuscript/scripts/compute_ece_ledger.py",
+    "source_csv": "publication/MDPI_Information_Manuscript/latex/supplementary_data/fig_S1_calibration_bins.csv",
+    "source_csv_md5": "bad24f1d705eb277e40ce7359849377d",
+    "figure_script": "publication/MDPI_Information_Manuscript/scripts/make_fig_S1_calibration_real.py",
+    "definition": "ECE = sum_b (n_b/N) * |pred_mean_b - emp_freq_b|, 10 equal-width bins"
+  },
+  "scope": {
+    "benchmark": "TransPHLA EL, FULL set",
+    "n_rows": 161652,
+    "is_decontaminated_subset": false,
+    "decontaminated_subset_n_for_contrast": 118143,
+    "WARNING": "This measurement is on the FULL TransPHLA EL set and INCLUDES the 26.9% of rows that exact (peptide, HLA) decontamination removes. It is NOT the n=118143 decontaminated subset used for Table 1. The phrasing 'ECE on the clean subset' is WITHDRAWN (failure #1 in .claude/skills/evidence-verified-review/SKILL.md). A decontaminated re-measurement is declared as future work in the manuscript."
+  },
+  "models": {
+    "DeepNeo-CL (EL)": {
+      "n_rows": 161652,
+      "n_bins": 10,
+      "ece_10bin": 0.0906,
+      "lowest_bin_fraction_of_rows": 0.2772,
+      "lowest_bin_empirical_positive_fraction": 0.019,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 44813,
+          "pred_mean": 0.0465,
+          "emp_freq": 0.019
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 19561,
+          "pred_mean": 0.1433,
+          "emp_freq": 0.0838
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 10521,
+          "pred_mean": 0.246,
+          "emp_freq": 0.2277
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 7365,
+          "pred_mean": 0.3477,
+          "emp_freq": 0.3984
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 6226,
+          "pred_mean": 0.4502,
+          "emp_freq": 0.5779
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 6419,
+          "pred_mean": 0.5513,
+          "emp_freq": 0.7529
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 8487,
+          "pred_mean": 0.6532,
+          "emp_freq": 0.8839
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 14235,
+          "pred_mean": 0.7554,
+          "emp_freq": 0.9547
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 27747,
+          "pred_mean": 0.855,
+          "emp_freq": 0.9881
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 16278,
+          "pred_mean": 0.9285,
+          "emp_freq": 0.9964
+        }
+      ]
+    },
+    "NetMHCpan-4.1 (EL)": {
+      "n_rows": 161652,
+      "n_bins": 10,
+      "ece_10bin": 0.2021,
+      "lowest_bin_fraction_of_rows": 0.5746,
+      "lowest_bin_empirical_positive_fraction": 0.157,
+      "bins": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "n": 92893,
+          "pred_mean": 0.007,
+          "emp_freq": 0.157
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "n": 5834,
+          "pred_mean": 0.1458,
+          "emp_freq": 0.8449
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.3,
+          "n": 4466,
+          "pred_mean": 0.2487,
+          "emp_freq": 0.9008
+        },
+        {
+          "bin_lo": 0.3,
+          "bin_hi": 0.4,
+          "n": 3995,
+          "pred_mean": 0.3496,
+          "emp_freq": 0.9309
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "n": 3975,
+          "pred_mean": 0.4504,
+          "emp_freq": 0.9537
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6,
+          "n": 4268,
+          "pred_mean": 0.5516,
+          "emp_freq": 0.9674
+        },
+        {
+          "bin_lo": 0.6,
+          "bin_hi": 0.7,
+          "n": 5165,
+          "pred_mean": 0.6522,
+          "emp_freq": 0.975
+        },
+        {
+          "bin_lo": 0.7,
+          "bin_hi": 0.8,
+          "n": 6775,
+          "pred_mean": 0.7525,
+          "emp_freq": 0.9823
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "n": 10937,
+          "pred_mean": 0.8551,
+          "emp_freq": 0.9918
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "n": 23344,
+          "pred_mean": 0.9569,
+          "emp_freq": 0.9969
+        }
+      ]
+    }
+  }
+}
